@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'terminal';
+    src: url('/font/Terminal.woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/gambar/bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.utama {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding: 2% 2%;
+    box-sizing: border-box;
+    background-color: none;
+
+}
+
+.header {
+    width: 100%;
+    height: 10%;
+    background-color: transparent;
+    backdrop-filter: blur(9px);
+    box-shadow: 1px 5px 20px 1px rgba(19, 19, 19, 0.676);
+    display: flex;
+    padding: 3% 0%;
+    border-radius: 20px;
+    border: 2px solid white;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+
+
+
+}
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.logo .gambar-logo {
+    height: 50px;
+
+}
+
+.logo h1 {
+
+    color: white;
+}
+
+.logo h1 span {
+    color: gold;
+}
+
+.nav-bar {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.nav-bar a:hover {
+    color: gold;
+    text-shadow: 
+    0 0 5px rgba(255, 255, 255, 0.486),
+    0 0 15px rgb(255, 255, 255, 0.486),
+    0 0 20px rgb(255, 255, 255, 0.486);
+
+}
+
+.home {
+    background-color: rgba(0, 0, 0, 0.517);
+    backdrop-filter: blur(9px);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin: 5% 0%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.konten-home {
+
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+
+}
+
+.konten-home h1 {
+    font-size: 4rem;
+    color: gold;
+
+
+}
+
+.konten-home h1 span {
+    color: white;
+
+}
+
+.konten-home .saya {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    font-family: 'terminal';
+
+}
+
+.konten-home .saya p {
+    font-family: 'terminal';
+    font-size: 1.5rem;
+
+}
+
+.saya span {
+    color: gold;
+    width: 16%;
+    height: 30px;
+    animation: typing 2s steps(22)infinite, blink 0.5s infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: 'terminal';
+    font-size: 1.5rem;
+
+
+}
+
+@keyframes typing {
+    from {
+        width: 0px;
+    }
+
+}
+
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+
+
+.service {
+    background-color: rgba(0, 0, 0, 0.517);
+    backdrop-filter: blur(9px);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin: 2% 0%;
+    box-sizing: border-box;
+    display: flex;
+
+
+}
+
+.konten-service {
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+
+}
+
+.konten-service h1 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 2%;
+}
+
+.konten-service h1 span {
+    color: gold;
+
+}
+
+.kotak {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.konten-kotak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    margin: 5%;
+    background-size: cover;
+    background-position: center;
+    border: 5px solid gold;
+    border-radius: 10px;
+    transition: .2s;
+
+
+
+}
+.kotak .konten-kotak h1{
+    color: white;
+   
+}
+.konten-kotak h2{
+   font-size: 2rem;
+    display: none;
+}
+.konten-kotak:hover h2{
+    display: grid;
+    
+    color:white;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+
+
+}
+.konten-kotak:hover h2 span{
+    color: gold;
+    font-size: 3rem;
+}
+.pesan{
+    display: none;
+    margin-top: 80%;
+    background-color: green;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+   
+
+}
+.konten-kotak .pesan button{
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.konten-kotak:hover .pesan{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+   align-items: center;
+ 
+    
+}
+.konten-kotak:hover {
+    background: linear-gradient(  rgb(31, 46, 255),#000046);   
+    transform: scale(1.1);
+    box-shadow: 0 0 20px gold;
+    transition: .2s;
+    
+
+}
+
+
+
+.konten-kotak:hover h1,
+.konten-kotak .description {
+    display: none;
+    transition: .2s;
+    color: black;
+}
+
+.konten-kotak h1 {
+    padding: 5%;
+    color: black;
+    font-size: 2rem;
+    line-height: 30px;
+}
+
+.about {
+    background-color: rgba(0, 0, 0, 0.517);
+    backdrop-filter: blur(9px);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin: 2% 0%;
+    box-sizing: border-box;
+    display: flex;
+
+
+}
+
+.konten-about {
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+
+}
+
+.konten-about h1 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 2%;
+   
+}
+
+.konten-about h1 span {
+    color: gold;
+    margin-left: 10px;
+
+}
+.konten-about-isi{
+    display: flex;
+    margin-top: 5%;
+    width: 100%;
+    
+}
+.foto-profile{
+    width: 50%;
+    
+}
+.foto-profile img{
+    width: 50%;
+    border-radius: 50px;
+    box-shadow: 
+    0 0 20px gold,
+    0 0 20px gold,
+    0 0 20px gold;
+}
+
+.narasi{
+    width: 50%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    
+
+}
+.narasi p{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+.narasi p span{
+    color: gold;
+}
+.contact {
+    background-color: rgba(0, 0, 0, 0.517);
+    backdrop-filter: blur(9px);
+    width: 100%;
+    height: 30%;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin-top: 10%;
+    box-sizing: border-box;
+
+
+
+}
+
+.konten-contact {
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+
+
+}
+
+
+.konten-contact h1 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 2%;
+}
+
+.konten-contact h1 span {
+    color: gold;
+
+}
+
+
+.sosial-media {
+    margin-top: 1%;
+    color: white;
+    font-size: 3rem;
+
+
+
+}
+
+.sosial-media a {
+    color: white;
+}
+
+.sosial-media i {
+    margin: 1%;
+    transition: .2s;
+}
+
+.sosial-media i:hover {
+    color: gold;
+    cursor: pointer;
+    transition: .2s;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.453);
+    transform: scale(1.1);
+
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.517);
+    backdrop-filter: blur(9px);
+    width: 100%;
+    height: 10%;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin: 2% 0%;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    display: flex;
+
+
+}
+
+.konten-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+
+
+}
+
+.konten-footer span {
+    color: yellow;
+    margin-left: .5%;
+}
+
+/* @media only screen and (max-width: 600px) {
+    .kotak {
+     display: flex;
+     flex-wrap: wrap;
+     background-color: red;
+    }
+  } */
